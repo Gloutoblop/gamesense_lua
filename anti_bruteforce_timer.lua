@@ -135,7 +135,7 @@ client.set_event_callback("bullet_impact", function(c)
             local delta = { player_head[1]-closest[1], player_head[2]-closest[2] }
             local delta_2d = math.sqrt(delta[1]^2+delta[2]^2)
         
-            if math.abs(delta_2d) < 35 then
+            if math.abs(delta_2d) < 40 then
                 it = it + 1
                 should_swap = true
             end
